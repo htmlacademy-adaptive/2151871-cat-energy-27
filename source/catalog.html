@@ -3,37 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <title>Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img src="img/logo-mobile.svg" width="34" height="37" alt="Кэт энерджи.">
-    </a>
-    <a class="main-header__logo">
-      <img src="img/logo.svg" width="101" height="18" alt="Кэт энерджи.">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="main-header__wrapper">
+      <a class="main-header__logo">
+        <img src="img/logo-mobile.svg" width="34" height="37" alt="Кэт энерджи.">
+      </a>
+      <a class="main-header__logo-cat-energy">
+        <img src="img/logo.svg" width="101" height="18" alt="Кэт энерджи.">
+      </a>
+      <nav class="main-header__nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="main-container-catalog">
     <section class="catalog-cards">
@@ -42,7 +45,7 @@
         <div class="catalog-cards__wrapper-container">
           <ul class="catalog-cards__list product-card">
             <li class="catalog-cards__item">
-              <a class="product-card__icon" href="">
+              <a class="product-card__icon" href="#">
                 <div class="product-card__wrapper-icon">
                   <img class="product-card__photo" src="img/catalog/chicken-500-mobile.png" alt="Кэт энерджи про 500 грамм со вкусом курицы.">
                 </div>
@@ -277,7 +280,7 @@
         <div class="additional-products__bonus">
           <svg class="additional-products__icon" aria-hidden="true" focusable="false">
           </svg>
-          <h2 class="additional-products__bonus-title">Закажите все и получите чехол для кота в подарок!</h2>
+          <h2 class="additional-products__bonus-title">Закажите все <br> и получите чехол для <br> кота в подарок!</h2>
         </div>
       </div>
     </section>
