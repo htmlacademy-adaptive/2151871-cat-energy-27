@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -14,22 +15,22 @@
       <a class="main-header__logo-cat-energy">
         <img src="img/logo.svg" width="101" height="18" alt="Кэт энерджи.">
       </a>
-      <nav class="main-header__nav">
+      <nav class="main-header__nav main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--form" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">
+              <a class="site-list__link site-list__link--form" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">
+              <a class="site-list__link site-list__link--form site-list__link--active site-list__link--form-active" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -48,17 +49,17 @@
         </h2>
         <form class="program-selection__questions questions" action="https://echo.htmlacademy.ru/" method="post">
           <ul class="questions__cat-data cat-data">
-            <li class="cat-data__info">
-              <label class="cat-data" for="cat-name">ИМЯ:*</label>
+            <li class="cat-data__item">
+              <label class="cat-data__name" for="cat-name">ИМЯ:*</label>
               <input class="cat-data__name-form" type="text" name="cat-name" value="БАРСИК" id="cat-name" required>
             </li>
 
-            <li class="cat-data__info">
+            <li class="cat-data__item">
               <label class="cat-data__name" for="cat-weight">Вес (кг):*</label>
               <input class="cat-data__name-form" type="number" name="cat-weight" value="7" id="cat-weight" required>
             </li>
 
-            <li class="cat-data__info">
+            <li class="cat-data__item">
               <label class="cat-data__name" for="cat-age">Возраст (лет):</label>
               <input class="cat-data__name-form" type="number" name="cat-age" value="7" id="cat-age">
             </li>
@@ -172,18 +173,17 @@
           <h2 class="visually-hidden">Сотрудничество.</h2>
           <div class="collaboration__invitation">
             <h3 class="collaboration__title">приглашаем к сотрудничеству дилеров!</h3>
-            <p class="collaboration__address">ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург</p>
+            <p class="collaboration__address">ул. Большая Конюшенная, д. 19/8
+              Санкт-Петербург</p>
           </div>
-
-          <div class="collaboration__map">
-            <h2 class="visually-hidden">Наше местоположение.</h2>
-            <iframe class="collaboration__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-            width="320" height="362" allowfullscreen=""
+        </div>
+        <div class="collaboration__map">
+          <h2 class="visually-hidden">Наше местоположение.</h2>
+          <iframe class="collaboration__google-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+            width="100%" height="362" allowfullscreen=""
             title="Офис компании по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург">
-            </iframe>
-          </div>
+          </iframe>
         </div>
       </section>
 
@@ -191,16 +191,18 @@
         <section class="footer__logo footer-logo">
           <h2 class="visually-hidden">Логотип сайта.</h2>
           <a class="footer-logo__logo-cat-energy" href="#">
-            <img class="footer-logo__cat-energy" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24">
+            <img class="footer-logo__cat-energy" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128"
+              height="24">
           </a>
         </section>
         <section class="footer__social">
           <h3 class="visually-hidden">Наши социальные сети.</h3>
-          <ul class="footer__social-list footer-social reset-list">
+          <ul class="footer__social-list footer-social">
             <li class="footer-social__item">
               <a class="footer-social__link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вконтакте.</span>
-                <svg class="footer-social__icon footer-social__icon--vk" aria-label="Ссылка на страницу HTML Academy в социальной сети Вконтакте.">
+                <svg class="footer-social__icon footer-social__icon--vk"
+                  aria-label="Ссылка на страницу HTML Academy в социальной сети Вконтакте.">
                   <use xlink:href="#vk"></use>
                 </svg>
               </a>
@@ -209,7 +211,8 @@
             <li class="footer-social__item">
               <a class="footer-social__link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">YouTube.</span>
-                <svg class="footer-social__icon footer-social__icon--yt" aria-label="Ссылка на канал HTML Academy в YouTube.">
+                <svg class="footer-social__icon footer-social__icon--yt"
+                  aria-label="Ссылка на канал HTML Academy в YouTube.">
                   <use xlink:href="#youtube"></use>
                 </svg>
               </a>

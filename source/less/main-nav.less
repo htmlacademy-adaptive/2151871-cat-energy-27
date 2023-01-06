@@ -1,0 +1,142 @@
+.main-nav {
+  width: auto;
+}
+
+.main-nav__list {
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  right: 0;
+  top: 65px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.site-list__item {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.site-list__link {
+  padding-top: 22px;
+  padding-bottom: 24px;
+  padding-left: 0;
+  position: relative;
+  display: block;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__toggle {
+  display: block;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.main-header__logo-cat-energy {
+  margin: 0 auto;
+}
+
+
+@media (min-width: @tablet-width) {
+  .main-nav--closed.main-nav__wrapper {
+    display: block;
+  }
+
+  .main-nav {
+    min-width: 440px;
+    height: 36px;
+  }
+
+  .main-nav__list {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-list__item {
+    width: auto;
+    border: none;
+  }
+
+  .site-list__link {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    min-height: auto;
+    text-align: center;
+    padding: 0;
+  }
+
+  .site-list__link--active {
+    position: relative;
+  }
+
+  .site-list__link--active::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-color: #68b738;
+    height: 2px;
+    bottom: -8px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    min-width: 483px;
+    background-color: transparent;
+    z-index: 6;
+  }
+
+  .main-nav__list {
+    background-color: transparent;
+  }
+
+  .site-list__link {
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+
+  .site-list__link--active::before {
+    background-color: #ffffff;
+  }
+
+  .site-list__link.site-list__link--catalog {
+    color: #000000;
+  }
+
+  .site-list__link--catalog-active::before {
+    background-color: #68b738;
+  }
+
+  .site-list__link.site-list__link--form {
+    color: #000000;
+  }
+
+  .site-list__link--form-active::before {
+    background-color: #68b738;
+  }
+}
+
