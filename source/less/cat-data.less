@@ -1,4 +1,4 @@
-.cat-data__info {
+.cat-data__item {
   margin: 0;
   margin-bottom: 13px;
   display: flex;
@@ -41,5 +41,23 @@
 
   &:invalid {
     outline: 2px solid #ff8282;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .cat-data__item {
+    margin-bottom: 16px;
+  }
+
+  .cat-data__name {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 17px;
+  }
+
+  .cat-data__name-form {
+    padding: 11px 18px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }

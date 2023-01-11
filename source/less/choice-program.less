@@ -15,3 +15,34 @@
   text-transform: uppercase;
   color: #222222;
 }
+
+@media (min-width: @tablet-width) {
+  .choice-program__form {
+    padding: 28px 27px 6px 27px;
+    border: 1px solid #e7e7e7;
+  }
+
+  .choice-program__list {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .choice-program__item {
+    margin-bottom: 23px;
+  }
+
+  .choice-program__item:not(:last-child) {
+    margin-bottom: 23px;
+  }
+
+  .choice-program__name {
+    padding-left: 43px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .choice-program__form {
+    margin: 0;
+    margin-left: 80px;
+  }
+}

@@ -1,5 +1,5 @@
 .collaboration__wrapper {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 .collaboration__title {
@@ -30,4 +30,63 @@
 .collaboration__google-map {
   display: block;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .collaboration__wrapper {
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  .collaboration__invitation {
+    padding: 54px 70px;
+  }
+
+  .collaboration__title {
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    width: 180px;
+  }
+
+  .collaboration__address {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    width: 160px;
+  }
+
+  .collaboration__google-map {
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .collaboration {
+    position: relative;
+  }
+
+  .collaboration__invitation {
+    padding: 60px 80px 56px 80px;
+    justify-content: space-between;
+    min-width: 565px;
+    align-items: center;
+  }
+
+  .collaboration__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background-color: #ffffff;
+  }
+
+  .collaboration__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .collaboration__address {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
