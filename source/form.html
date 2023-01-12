@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo">
-        <img src="img/logo-mobile.svg" width="34" height="37" alt="Кэт энерджи.">
+      <a class="main-header__logo logotype">
+        <picture>
+          <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)">
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+          <img class="logotype__logo-cat" src="img/logo-mobile.svg" srcset="img/logo-mobile.svg"
+            alt="Логотип Кот Энерджи.">
+        </picture>
       </a>
       <a class="main-header__logo-cat-energy">
         <img src="img/logo.svg" width="101" height="18" alt="Кэт энерджи.">
       </a>
-      <nav class="main-header__nav main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button">
+          <svg class="main-nav__burger" aria-label="Отрыть меню." focusable="false">
+            <use xlink:href="sprite.svg#menu-burger"></use>
+          </svg>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -30,7 +41,8 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--form site-list__link--active site-list__link--form-active" href="form.html">
+              <a class="site-list__link site-list__link--form site-list__link--active site-list__link--form-active"
+                href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -70,21 +82,24 @@
               <ul class="choice-program__list">
                 <li class="choice-program__item">
                   <label class="choice-program__label" for="program-slim">
-                    <input class="choice-program__from" type="radio" name="choice-program" value="program-slim" id="program-slim" checked>
+                    <input class="choice-program__from" type="radio" name="choice-program" value="program-slim"
+                      id="program-slim" checked>
                     <span class="choice-program__name">Похудение</span>
                   </label>
                 </li>
 
                 <li class="choice-program__item">
                   <label class="choice-program__label" for="program-pro">
-                    <input class="choice-program__from" type="radio" name="choice-program" value="program-pro" id="program-pro">
+                    <input class="choice-program__from" type="radio" name="choice-program" value="program-pro"
+                      id="program-pro">
                     <span class="choice-program__name">Набор массы</span>
                   </label>
                 </li>
 
                 <li class="choice-program__item">
                   <label class="choice-program__label" for="need-advice">
-                    <input class="choice-program__from" type="radio" name="choice-program" value="need-advice" id="need-advice">
+                    <input class="choice-program__from" type="radio" name="choice-program" value="need-advice"
+                      id="need-advice">
                     <span class="choice-program__name">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
@@ -93,67 +108,79 @@
           </div>
 
           <div class="questions__contact contact">
-            <div class="contact__wrapper">
+            <div class="contact__wrapper line">
               <h2 class="contact__title">
                 Контактные данные <br>
                 (владельца кота)
               </h2>
-              <ul class="contact__list">
-                <li class="contact__item">
-                  <label class="contact__label contact__label--email" for="email">E-mail:*</label>
-                  <input class="contact__input contact__input--email" type="email" value="kuklachev@gmail.com" name="email" id="email" required>
-                </li>
-
-                <li class="contact__item">
-                  <label class="contact__label contact__label--phone" for="phone">Телефон:*</label>
-                  <input class="contact__input contact__input--phone" type="tel" value="8 (960) 900-60-90" name="phone" id="phone" required>
-                </li>
-              </ul>
             </div>
+            <ul class="contact__list">
+              <li class="contact__item">
+                <label class="contact__label contact__label--email" for="email">E-mail:*</label>
+                <div class="contact__input--wrapper">
+                  <input class="contact__input contact__input--email" type="email" value="kuklachev@gmail.com"
+                    name="email" id="email" required>
+                  <svg class="contact__input--email-icon" aria-label="Иконка телефона">
+                    <use xlink:href="sprite.svg#icon-email"></use>
+                  </svg>
+                </div>
+              </li>
+
+              <li class="contact__item">
+                <label class="contact__label contact__label--phone" for="phone">Телефон:*</label>
+                <div class="contact__input--wrapper">
+                  <input class="contact__input contact__input--phone" type="tel" value="8 (960) 900-60-90" name="phone"
+                    id="phone" required>
+                  <svg class="contact__input--phone-icon" aria-label="Иконка телефона">
+                    <use xlink:href="sprite.svg#icon-phone"></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+
           </div>
 
           <div class="questions__comment comment">
-            <div class="comment__wrapper">
+            <div class="comment__wrapper line">
               <h2 class="comment__title">Комментарий</h2>
-              <label class="comment__skill-cat" for="skills"></label>
-              <textarea class="comment__skill-cat-form" id="skills">Расскажите обо всех повaдках кота</textarea>
             </div>
+            <label class="comment__skill-cat" for="skills"></label>
+            <textarea class="comment__skill-cat-form" id="skills">Расскажите обо всех повaдках кота</textarea>
           </div>
 
           <div class="questions__additionally additionally">
-            <div class="additionally__wrapper">
+            <div class="additionally__wrapper line">
               <h2 class="additionally__title">Дополнительно</h2>
-              <ul class="additionally__list">
-                <li class="additionally__item">
-                  <label class="additionally__label">
-                    <input class="additionally__form" type="checkbox" name="additionally" value="sweetener" checked>
-                    <span class="additionally__name">Cахарозаменитель</span>
-                  </label>
-                </li>
-
-                <li class="additionally__item">
-                  <label class="additionally__label">
-                    <input class="additionally__from" type="checkbox" name="additionally" value="water">
-                    <span class="additionally__name">Питьевая вода</span>
-                  </label>
-                </li>
-
-                <li class="additionally__item">
-                  <label class="additionally__label">
-                    <input class="additionally__from" type="checkbox" name="additionally" value="milk">
-                    <span class="additionally__name">Молоко</span>
-                  </label>
-                </li>
-
-                <li class="additionally__item">
-                  <label class="additionally__label">
-                    <input class="additionally__from" type="checkbox" name="additionally" value="vitamins">
-                    <span class="additionally__name">Витамины</span>
-                  </label>
-                </li>
-              </ul>
             </div>
+            <ul class="additionally__list">
+              <li class="additionally__item">
+                <label class="additionally__label">
+                  <input class="additionally__form" type="checkbox" name="additionally" value="sweetener" checked>
+                  <span class="additionally__name">Cахарозаменитель</span>
+                </label>
+              </li>
 
+              <li class="additionally__item">
+                <label class="additionally__label">
+                  <input class="additionally__from" type="checkbox" name="additionally" value="water">
+                  <span class="additionally__name">Питьевая вода</span>
+                </label>
+              </li>
+
+              <li class="additionally__item">
+                <label class="additionally__label">
+                  <input class="additionally__from" type="checkbox" name="additionally" value="milk">
+                  <span class="additionally__name">Молоко</span>
+                </label>
+              </li>
+
+              <li class="additionally__item">
+                <label class="additionally__label">
+                  <input class="additionally__from" type="checkbox" name="additionally" value="vitamins">
+                  <span class="additionally__name">Витамины</span>
+                </label>
+              </li>
+            </ul>
             <div class="questions__send">
               <button class="questions__send-form" type="submit">Отправить заявку</button>
               <p class="questions__required-form">* — Обязательные поля</p>
@@ -203,7 +230,7 @@
                 <span class="visually-hidden">Вконтакте.</span>
                 <svg class="footer-social__icon footer-social__icon--vk"
                   aria-label="Ссылка на страницу HTML Academy в социальной сети Вконтакте.">
-                  <use xlink:href="#vk"></use>
+                  <use xlink:href="sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
@@ -213,7 +240,7 @@
                 <span class="visually-hidden">YouTube.</span>
                 <svg class="footer-social__icon footer-social__icon--yt"
                   aria-label="Ссылка на канал HTML Academy в YouTube.">
-                  <use xlink:href="#youtube"></use>
+                  <use xlink:href="sprite.svg#youtube"></use>
                 </svg>
               </a>
             </li>
@@ -222,7 +249,7 @@
               <a class="footer-social__link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм.</span>
                 <svg class="footer-social__icon footer-social__icon-tg" aria-label="Канал HTML Academy в телеграмме.">
-                  <use xlink:href="#telegram"></use>
+                  <use xlink:href="sprite.svg#telegram"></use>
                 </svg>
               </a>
             </li>
@@ -232,12 +259,14 @@
         <a class="footer__copyright copyright" href="https://htmlacademy.ru/">
           <p class="copyright__link">HTML Academy</p>
           <svg class="copyright__htmlacademy-logo" aria-label="Ссылка на сайт HTML Академии.">
-            <use xlink:href="#htmlacademy"></use>
+            <use xlink:href="sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
 
   </footer>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>

@@ -97,6 +97,13 @@
   padding-bottom: 43px;
 }
 
+.additional-products__icon {
+  margin: 55px auto;
+  width: 100%;
+  height: 80px;
+  fill: #ffffff;
+}
+
 @media (min-width: @tablet-width) {
   .additional-products__wrapper {
     padding: 3px 30px 76px 30px;
@@ -122,8 +129,13 @@
   }
 
   .additional-products__title::after {
+    content: "";
+    position: absolute;
     margin-left: 40px;
     width: 100%;
+    height: 2px;
+    top: 50%;
+    background-color: #68b738;
   }
 
   .additional-products__cards {
@@ -132,7 +144,7 @@
 
   .additional-products__item {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     padding: 26px 38px 32px 38px;
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
