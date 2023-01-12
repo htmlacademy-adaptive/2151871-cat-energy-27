@@ -23,7 +23,6 @@
 .how-works__item {
   display: flex;
   align-items: center;
-  padding-left: 80px;
 }
 
 .how-works__item:not(:last-child) {
@@ -37,6 +36,37 @@
   font-size: 14px;
   line-height: 18px;
   margin: 0;
+}
+
+.how-works__icon {
+  margin-right: 20px;
+  min-width: 60px;
+  min-height: 60px;
+  background-color: #68b738;
+}
+
+.how-works__icon--leaf {
+  background-image: url("../img/icon-leaf.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.how-works__icon--powder {
+  background-image: url("../img/icon-powder.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.how-works__icon--eat {
+  background-image: url("../img/icon--eat.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.how-works__icon--time {
+  background-image: url("../img/icon--time.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: @tablet-width) {
@@ -53,7 +83,7 @@
   .how-works__list {
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 153px;
     row-gap: 58px;
     margin-top: 72px;
@@ -68,6 +98,21 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    counter-increment: advantages-counter;
+  }
+
+  .how-works__item::after {
+    content: counter(advantages-counter);
+    position: absolute;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    text-align: center;
+    color: #f2f2f2;
+    width: 120px;
+    top: -45px;
+    right: 2px;
   }
 
   .how-works__description {
@@ -75,6 +120,13 @@
     font-size: 16px;
     line-height: 24px;
     margin: 30px 30px 57px 0;
+  }
+
+  .how-works__icon {
+    margin: 0;
+    width: 80px;
+    height: 80px;
+    background-color: #68b738;
   }
 }
 
@@ -87,6 +139,7 @@
     display: flex;
     margin: 0;
     padding: 0;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
   }
 
@@ -94,7 +147,7 @@
     margin-bottom: 37px;
   }
 
-  .how-works_title {
-    margin-bottom: 32px;
+  .how-works__title {
+    margin-bottom: 72px;
   }
 }
