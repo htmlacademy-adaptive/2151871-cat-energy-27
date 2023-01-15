@@ -9,17 +9,25 @@
 </head>
 
 <body class="page__body">
-
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo">
-        <img src="img/logo-mobile.svg" width="34" height="37" alt="Кэт энерджи.">
+      <a class="main-header__logo logotype">
+        <picture>
+          <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)">
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+          <img class="logotype__logo-cat" src="img/logo-mobile.svg" srcset="img/logo-mobile.svg"
+            alt="Логотип Кот Энерджи.">
+        </picture>
       </a>
       <a class="main-header__logo-cat-energy">
         <img src="img/logo.svg" width="101" height="18" alt="Кэт энерджи.">
       </a>
-      <nav class="main-header__nav main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <svg class="main-nav__burger" aria-label="Отрыть меню." focusable="false">
+            <use xlink:href="./sprite.svg#menu-burger"></use>
+          </svg>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -42,6 +50,7 @@
       </nav>
     </div>
   </header>
+
   <main class="main-container">
     <h1 class="visually-hidden">Cat Energy "Ваш кот будет здоров"</h1>
     <section class="promo">
@@ -66,21 +75,37 @@
       <h2 class="visually-hidden">Примеры программ питания</h2>
       <div class="program__wrapper">
         <ul class="program__list">
-          <li class="program__item program__item--slim">
-            <p class="program__title">Похудение</p>
-            <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-              Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <li class="program__item">
+            <div class="program__wrapper-title">
+              <div class="program__icon program__icon--slim"></div>
+              <p class="program__title">Похудение</p>
+            </div>
+            <div class="program__wrapper-icon-tablet">
+              <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по
+                деревьям?
+                Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <div class="program__icon-tablet program__icon-tablet--slim"></div>
+            </div>
             <a class="program__link" href="#">
               <span class="program__name">каталог slim</span>
+              <div class="program__arrow"></div>
             </a>
           </li>
 
-          <li class="program__item program__item--mass">
-            <p class="program__title">Набор массы</p>
-            <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
-              поможет вашему коту нарастить необходимые мышцы!</p>
+          <li class="program__item">
+            <div class="program__wrapper-title">
+              <div class="program__icon program__icon--mass"></div>
+              <p class="program__title">Набор массы</p>
+            </div>
+            <div class="program__wrapper-icon-tablet">
+              <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
+                Pro
+                поможет вашему коту нарастить необходимые мышцы!</p>
+              <div class="program__icon-tablet program__icon-tablet--mass"></div>
+            </div>
             <a class="program__link" href="#">
               <span class="program__name">каталог pro</span>
+              <div class="program__arrow"></div>
             </a>
           </li>
         </ul>
@@ -92,6 +117,7 @@
         <h2 class="how-works__title">Как это работает</h2>
         <ul class="how-works__list">
           <li class="how-works__item">
+            <div class="how-works__icon how-works__icon--leaf"></div>
             <p class="how-works__description">
               Функциональное питание
               содержит только полезные
@@ -99,6 +125,7 @@
           </li>
 
           <li class="how-works__item">
+            <div class="how-works__icon how-works__icon--powder"></div>
             <p class="how-works__description">
               Выпускается в виде порошка,
               который нужно лишь залить
@@ -106,6 +133,7 @@
           </li>
 
           <li class="how-works__item">
+            <div class="how-works__icon how-works__icon--eat"></div>
             <p class="how-works__description">
               Замените один-два приема
               обычной еды на наше
@@ -114,6 +142,7 @@
           </li>
 
           <li class="how-works__item">
+            <div class="how-works__icon how-works__icon--time"></div>
             <p class="how-works__description">
               Уже через месяц
               наслаждайтесь изменениями
@@ -189,10 +218,10 @@
         </div>
         <div class="collaboration__map">
           <h2 class="visually-hidden">Наше местоположение.</h2>
-          <iframe class="collaboration__google-map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-            width="100%" height="362" allowfullscreen=""
-            title="Офис компании по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858716276668!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1673549122033!5m2!1sru!2sru"
+            width="100%" height="362" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
       </section>
@@ -213,7 +242,7 @@
                 <span class="visually-hidden">Вконтакте.</span>
                 <svg class="footer-social__icon footer-social__icon--vk"
                   aria-label="Ссылка на страницу HTML Academy в социальной сети Вконтакте.">
-                  <use xlink:href="#vk"></use>
+                  <use xlink:href="sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
@@ -223,7 +252,7 @@
                 <span class="visually-hidden">YouTube.</span>
                 <svg class="footer-social__icon footer-social__icon--yt"
                   aria-label="Ссылка на канал HTML Academy в YouTube.">
-                  <use xlink:href="#youtube"></use>
+                  <use xlink:href="sprite.svg#youtube"></use>
                 </svg>
               </a>
             </li>
@@ -232,7 +261,7 @@
               <a class="footer-social__link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм.</span>
                 <svg class="footer-social__icon footer-social__icon-tg" aria-label="Канал HTML Academy в телеграмме.">
-                  <use xlink:href="#telegram"></use>
+                  <use xlink:href="sprite.svg#telegram"></use>
                 </svg>
               </a>
             </li>
@@ -242,13 +271,14 @@
         <a class="footer__copyright copyright" href="https://htmlacademy.ru/">
           <p class="copyright__link">HTML Academy</p>
           <svg class="copyright__htmlacademy-logo" aria-label="Ссылка на сайт HTML Академии.">
-            <use xlink:href="#htmlacademy"></use>
+            <use xlink:href="sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
 
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
