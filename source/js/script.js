@@ -39,6 +39,3 @@ function handleReleaseCurtaine (event) {
 window.addEventListener("pointerup", handleReleaseCurtaine)
 
 curtain.addEventListener("pointerdown", handleGrabCurtain)
-
-
-
