@@ -9,8 +9,14 @@
 
 .product-card__icon {
   width: 50%;
-  text-align: center;
-  align-self: flex-end;
+}
+
+.product-card__wrapper-icon {
+  display: flex;
+  min-width: 140px;
+  min-height: 121px;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .product-card__info {
@@ -25,7 +31,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #222222;
-  padding-top: 20px;
+  padding-top: 19px;
   padding-bottom: 14px;
   padding-right: 45px;
 }
@@ -69,14 +75,13 @@
 
 @media (min-width: @tablet-width) {
   .product-card__item {
-    display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: #f2f2f2;
-    padding-top: 39px;
-    padding-bottom: 39px;
-    padding-left: 39px;
-    padding-right: 37px;
+    padding: 0 36px 39px 36px;
+    width: 100%;
     box-sizing: border-box;
   }
 
@@ -85,14 +90,14 @@
   }
 
   .product-card__title {
-    margin-bottom: 13px;
+    margin-bottom: 21px;
     padding: 0;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
     padding-left: 59px;
     padding-right: 59px;
-    margin-top: 34px;
+    margin-top: 28px;
   }
 
   .product-card__info {
@@ -110,40 +115,37 @@
   }
 
   .product-card__icon {
-    align-self: center;
-    margin-top: -80px;
-    margin-bottom: 10px;
-    margin-right: 40px;
+    width: 100%;
   }
 
   .product-card__wrapper-icon {
-    height: 160px;
+    display: flex;
+    min-width: 168px;
+    min-height: 200px;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: -80px;
   }
 
   .product-card__photo {
-    min-width: 163px;
-    height: auto;
+    min-width: 161px;
+    height: 100%;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .product-card__item {
+    padding: 0 30px 40px 35px;
+  }
+
   .product-card__title {
     line-height: 21px;
-    padding-right: 20px;
+    padding-right: 15px;
     padding-left: 20px;
   }
 
-  .product-card__photo {
-    min-width: 172px;
-    height: auto;
-  }
-
   .product-card__wrapper-icon {
-    min-height: 202px;
-  }
-
-  .product-card__icon {
-    width: auto;
-    margin-bottom: 42px;
+    min-width: 172px;
+    min-height: 196px;
   }
 }

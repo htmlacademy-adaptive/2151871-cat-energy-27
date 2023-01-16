@@ -1,0 +1,41 @@
+.cat-comparison__range {
+	z-index: 1;
+	display: grid;
+	place-items: center;
+	margin: 0 -2px;
+	width: 4px;
+	height: 100%;
+	border-radius: 2px;
+	color: #666666;
+	background-color: currentcolor;
+	cursor: col-resize;
+	transition: color 0.2s, opacity 0.2s;
+
+	&:hover {
+		color: #68b738;
+	}
+
+	&:active {
+		opacity: 0.6;
+	}
+}
+
+.range-bar__button {
+  box-sizing: border-box;
+	display: grid;
+	margin: -18px;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	color: inherit;
+	border: 2px solid currentcolor;
+	border-radius: 20px;
+	background-color: #ffffff;
+	cursor: col-resize;
+
+	&::before {
+		content: "";
+		background-color: currentcolor;
+		mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><path d='m16 11-8 9 8 9V11Zm16 9-8-9v18l8-9Z'/></svg>");
+	}
+}
