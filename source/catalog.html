@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <title>Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/152.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -25,7 +28,7 @@
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <svg class="main-nav__burger" aria-label="Отрыть меню." focusable="false">
-            <use xlink:href="sprite.svg#menu-burger"></use>
+            <use xlink:href="./img/sprite.svg#menu-burger"></use>
           </svg>
         </button>
         <div class="main-nav__wrapper">
@@ -52,7 +55,7 @@
     </div>
   </header>
   <main class="main-container-catalog">
-    <section class="catalog-cards">
+    <section class="main-container-catalog__catalog-cards catalog-cards">
       <div class="catalog-cards__wrapper">
         <h1 class="catalog-cards__title">Каталог продукции</h1>
         <div class="catalog-cards__wrapper-container">
@@ -60,8 +63,12 @@
             <li class="product-card__item">
               <a class="product-card__icon" href="#">
                 <div class="product-card__wrapper-icon">
-                  <img class="product-card__photo" src="img/catalog/chicken-500-mobile.png"
+                  <picture>
+                    <source srcset="img/catalog/chicken-500-desktop.png, img/retina/chicken-500-desktop-@2x.png 2x" media="(min-width: 1440px)">
+                    <source srcset="img/catalog/chicken-500-tablet.png, img/retina/chicken-500-desktop-@2x.png 2x" media="(min-width: 768px)">
+                    <img class="product-card__photo " src="img/catalog/chicken-500-mobile.png" srcset="img/catalog/chicken-500-mobile.png, img/retina/chicken-500-mobile-@2x.png 2x" width="68" height="86"
                     alt="Кэт энерджи про 500 грамм со вкусом курицы.">
+                  </picture>
                 </div>
               </a>
               <div class="product-card__info">
@@ -87,8 +94,12 @@
             <li class="product-card__item">
               <a class="product-card__icon" href="">
                 <div class="product-card__wrapper-icon">
-                  <img class="product-card__photo" src="img/catalog/chicken-1000-mobile.png"
+                  <picture>
+                    <source srcset="img/catalog/chicken-1000-desktop.png, img/retina/chicken-1000-desktop-@2x.png 2x" media="(min-width: 1440px)">
+                    <source srcset="img/catalog/chicken-1000-tablet.png, img/retina/chicken-1000-tablet-@2x.png 2x" media="(min-width: 768px)">
+                    <img class="product-card__photo" src="img/catalog/chicken-1000-mobile.png" srcset="img/catalog/chicken-1000-mobile.png, img/retina/chicken-1000-mobile-@2x.png 2x" width="84" height="100"
                     alt="Кэт энерджи про 1000 грамм со вкусом курицы.">
+                  </picture>
                 </div>
               </a>
               <div class="product-card__info">
@@ -114,8 +125,12 @@
             <li class="product-card__item">
               <a class="product-card__icon" href="">
                 <div class="product-card__wrapper-icon">
-                  <img class="product-card__photo" src="img/catalog/fish-500-mobile.png"
+                  <picture>
+                    <source srcset="img/catalog/fish-500-desktop.png, img/retina/fish-500-desktop-@2x.png 2x" media="(min-width: 1440px)">
+                    <source srcset="img/catalog/fish-500-tablet.png, img/retina/fish-500-desktop-@2x.png 2x" media="(min-width: 768px)">
+                    <img class="product-card__photo" src="img/catalog/fish-500-mobile.png" srcset="img/catalog/fish-500-mobile.png, img/retina/fish-500-mobile-@2x.png 2x" width="68" height="78"
                     alt="Кэт энерджи про 500 грамм со вкусом рыбы.">
+                  </picture>
                 </div>
               </a>
               <div class="product-card__info">
@@ -141,8 +156,12 @@
             <li class="product-card__item">
               <a class="product-card__icon" href="">
                 <div class="product-card__wrapper-icon">
-                  <img class="product-card__photo" src="img/catalog/fish-1000-mobile.png"
+                  <picture>
+                    <source srcset="img/catalog/fish-1000-desktop.png, img/retina/fish-1000-desktop-@2x.png 2x" media="(min-width: 1440px)">
+                    <source srcset="img/catalog/fish-1000-tablet.png, img/retina/fish-1000-tablet-@2x.png 2x" media="(min-width:768px)">
+                    <img class="product-card__photo" src="img/catalog/fish-1000-mobile.png" srcset="img/catalog/fish-1000-mobile.png, img/retina/fish-1000-mobile-@2x.png 2x" width="84" height="100"
                     alt="Кэт энерджи про 500 грамм со вкусом рыбы.">
+                  </picture>
                 </div>
               </a>
               <div class="product-card__info">
@@ -168,8 +187,12 @@
             <li class="product-card__item">
               <a class="product-card__icon" href="">
                 <div class="product-card__wrapper-icon">
-                  <img class="product-card__photo" src="img/catalog/buckwheat-500-mobile.png"
+                  <picture>
+                    <source srcset="img/catalog/buckwheat-500-desktop.png, img/retina/buckwheat-500-desktop-@2x.png 2x" media="(min-width: 1440px)">
+                    <source srcset="img/catalog/buckwheat-500-tablet.png, img/retina/buckwheat-500-desktop-@2x.png 2x" media="(min-width: 768px)">
+                    <img class="product-card__photo" src="img/catalog/buckwheat-500-mobile.png" srcset="img/catalog/buckwheat-500-mobile.png, img/retina/buckwheat-500-mobile-@2x.png 2x" width="68" height="78"
                     alt="Кэт энерджи слим 500 грамм со вкусом гречки.">
+                  </picture>
                 </div>
               </a>
               <div class="product-card__info">
@@ -195,8 +218,12 @@
             <li class="product-card__item">
               <a class="product-card__icon" href="">
                 <div class="product-card__wrapper-icon">
-                  <img class="product-card__photo" src="img/catalog/buckwheat-1000-mobile.png"
+                  <picture>
+                    <source srcset="img/catalog/buckwheat-1000-desktop.png, img/retina/buckwheat-1000-desktop-@2x.png 2x" media="(min-width: 1440px)">
+                    <source srcset="img/catalog/buckwheat-1000-tablet.png, img/retina/buckwheat-1000-tablet-@2x.png 2x" media="(min-width: 768px)">
+                    <img class="product-card__photo" src="img/catalog/buckwheat-1000-mobile.png" srcset="img/catalog/buckwheat-1000-mobile.png, img/retina/buckwheat-1000-mobile-@2x.png 2x" width="84" height="100"
                     alt="Кэт энерджи слим 1000 грамм со вкусом гречки.">
+                  </picture>
                 </div>
               </a>
               <div class="product-card__info">
@@ -222,8 +249,12 @@
             <li class="product-card__item">
               <a class="product-card__icon" href="">
                 <div class="product-card__wrapper-icon">
-                  <img class="product-card__photo" src="img/catalog/rice-500-mobile.png"
+                  <picture>
+                    <source srcset="img/catalog/rice-500-desktop.png, img/retina/rice-500-desktop-@2x.png 2x" media="(min-width: 1440px)">
+                    <source srcset="img/catalog/rice-500-tablet.png, img/retina/rice-500-desktop-@2x.png 2x" media="(min-width: 768px)">
+                    <img class="product-card__photo" src="img/catalog/rice-500-mobile.png" srcset="img/catalog/rice-500-mobile.png, img/retina/rice-500-mobile-@2x.png 2x" width="72" height="84"
                     alt="Кэт энерджи слим 500 грамм со вкусом риса.">
+                  </picture>
                 </div>
               </a>
               <div class="product-card__info">
@@ -257,9 +288,11 @@
       </div>
     </section>
 
-    <section class="additional-products">
-      <div class="additional-products__wrapper">
-        <h2 class="additional-products__title">Дополнительные товары</h2>
+    <section class="main-container-catalog__additional-products additional-products">
+      <div class="additional-products__wrapper ">
+        <div class="additional-products__wrapper-title">
+          <h2 class="additional-products__title">Дополнительные товары</h2>
+        </div>
         <div class="additional-products__body">
           <ul class="additional-products__list">
             <li class="additional-products__item">
@@ -300,7 +333,7 @@
           </ul>
           <div class="additional-products__bonus">
             <svg class="additional-products__icon" aria-hidden="true" focusable="false">
-              <use xlink:href="sprite.svg#prize"></use>
+              <use xlink:href="./img/sprite.svg#prize"></use>
             </svg>
             <h2 class="additional-products__bonus-title">Закажите все <br> и получите чехол для <br> кота в подарок!
             </h2>
@@ -347,7 +380,7 @@
                 <span class="visually-hidden">Вконтакте.</span>
                 <svg class="footer-social__icon footer-social__icon--vk"
                   aria-label="Ссылка на страницу HTML Academy в социальной сети Вконтакте.">
-                  <use xlink:href="sprite.svg#vk"></use>
+                  <use xlink:href="./img/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
@@ -357,7 +390,7 @@
                 <span class="visually-hidden">YouTube.</span>
                 <svg class="footer-social__icon footer-social__icon--yt"
                   aria-label="Ссылка на канал HTML Academy в YouTube.">
-                  <use xlink:href="sprite.svg#youtube"></use>
+                  <use xlink:href="./img/sprite.svg#youtube"></use>
                 </svg>
               </a>
             </li>
@@ -366,7 +399,7 @@
               <a class="footer-social__link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм.</span>
                 <svg class="footer-social__icon footer-social__icon-tg" aria-label="Канал HTML Academy в телеграмме.">
-                  <use xlink:href="sprite.svg#telegram"></use>
+                  <use xlink:href="./img/sprite.svg#telegram"></use>
                 </svg>
               </a>
             </li>
@@ -376,7 +409,7 @@
         <a class="footer__copyright copyright" href="https://htmlacademy.ru/">
           <p class="copyright__link">HTML Academy</p>
           <svg class="copyright__htmlacademy-logo" aria-label="Ссылка на сайт HTML Академии.">
-            <use xlink:href="sprite.svg#htmlacademy"></use>
+            <use xlink:href="./img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>

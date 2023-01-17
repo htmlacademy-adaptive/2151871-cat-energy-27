@@ -1,0 +1,48 @@
+.cat-comparison-slider-wrapper {
+  margin: 0 auto;
+}
+
+.cat-comparison {
+  display: grid;
+	grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
+	width: min(100%; 560px);
+	aspect-ratio: 280/256;
+}
+
+.cat-comparison__before {
+  display: block;
+}
+
+.cat-comparison__after {
+  display: block;
+}
+
+.cat-comparison__image {
+	display: block;
+	height: 100%;
+	object-fit: cover;
+}
+
+.cat-comparison__image-before  {
+  object-position: left;
+}
+
+.cat-comparison__image-after  {
+  object-position: right;
+}
+
+@media (min-width: @tablet-width) {
+  .cat-comparison-slider {
+    background: linear-gradient(#ffffff 26.5%, #eaeaea 19%);
+    padding-bottom: 101px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cat-comparison-slider {
+    position: relative;
+    top: -135px;
+    padding: 0;
+    background: linear-gradient(#ffffff 26.5%, #f2f2f2 19%);
+  }
+}

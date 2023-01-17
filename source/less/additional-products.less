@@ -1,9 +1,28 @@
+.additional-products {
+  overflow: hidden;
+}
+
 .additional-products__wrapper {
   padding: 26px 20px 35px 20px;
   background-color: #ffffff;
 }
 
+.additional-products__wrapper-title {
+  position: relative;
+}
+
+.additional-products__wrapper-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  background-color: #68b738;
+  overflow: hidden;
+}
+
 .additional-products__title {
+  display: inline-block;
   position: relative;
   margin: 0;
   font-family: inherit;
@@ -12,6 +31,7 @@
   line-height: 24px;
   text-align: left;
   color: #000000;
+  padding-right: 21px;
 }
 
 .additional-products__list {
@@ -86,6 +106,13 @@
   background-size: cover;
 }
 
+@media (min-resolution: 2dppx) {
+  .additional-products__bonus {
+    background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/retina/background-bonus-@2x.jpg");
+    background-size: cover;
+  }
+}
+
 .additional-products__bonus-title {
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
@@ -110,15 +137,7 @@
     background-color: #ffffff;
   }
 
-  .additional-products__title {
-    font-size: 36px;
-    line-height: 36px;
-    text-align: left;
-    padding-left: 37px;
-    padding-right: 36px;
-  }
-
-  .additional-products__title::before {
+  .additional-products__wrapper-title::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -126,16 +145,17 @@
     top: 50%;
     background-color: #68b738;
     right: 100%;
+    overflow: hidden;
   }
 
-  .additional-products__title::after {
-    content: "";
-    position: absolute;
-    margin-left: 40px;
-    width: 100%;
-    height: 2px;
-    top: 50%;
-    background-color: #68b738;
+
+  .additional-products__title {
+    display: inline-block;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    padding-left: 37px;
+    padding-right: 36px;
   }
 
   .additional-products__cards {
@@ -194,6 +214,14 @@
     min-height: 200px;
   }
 
+  @media (min-resolution: 2dppx) {
+    .additional-products__bonus {
+      background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/retina/background-bonus-tablet-@2x.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
   .additional-products__icon {
     margin-left: 77px;
     margin-right: 0;
@@ -210,7 +238,7 @@
 
 @media (min-width: @desktop-width) {
   .additional-products__wrapper {
-    padding: 80px 110px 86px 110px;
+    padding: 0 110px 86px 110px;
   }
 
   .additional-products__body {
@@ -252,6 +280,13 @@
     flex-direction: column;
     margin-left: 80px;
     background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background-bonus-desktop.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .additional-products__bonus {
+      background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/retina/background-bonus-desktop-@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .additional-products__bonus-title {

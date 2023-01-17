@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -25,7 +27,7 @@
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <svg class="main-nav__burger" aria-label="Отрыть меню." focusable="false">
-            <use xlink:href="sprite.svg#menu-burger"></use>
+            <use xlink:href="./img/sprite.svg#menu-burger"></use>
           </svg>
         </button>
         <div class="main-nav__wrapper">
@@ -82,24 +84,27 @@
               <ul class="choice-program__list">
                 <li class="choice-program__item">
                   <label class="choice-program__label" for="program-slim">
-                    <input class="choice-program__from" type="radio" name="choice-program" value="program-slim"
+                    <input class="choice-program__input" type="radio" name="choice-program" value="program-slim"
                       id="program-slim" checked>
+                    <span class="choice-program__mark"></span>
                     <span class="choice-program__name">Похудение</span>
                   </label>
                 </li>
 
                 <li class="choice-program__item">
                   <label class="choice-program__label" for="program-pro">
-                    <input class="choice-program__from" type="radio" name="choice-program" value="program-pro"
+                    <input class="choice-program__input" type="radio" name="choice-program" value="program-pro"
                       id="program-pro">
+                    <span class="choice-program__mark"></span>
                     <span class="choice-program__name">Набор массы</span>
                   </label>
                 </li>
 
                 <li class="choice-program__item">
                   <label class="choice-program__label" for="need-advice">
-                    <input class="choice-program__from" type="radio" name="choice-program" value="need-advice"
+                    <input class="choice-program__input" type="radio" name="choice-program" value="need-advice"
                       id="need-advice">
+                    <span class="choice-program__mark"></span>
                     <span class="choice-program__name">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
@@ -116,23 +121,23 @@
             </div>
             <ul class="contact__list">
               <li class="contact__item">
-                <label class="contact__label contact__label--email" for="email">E-mail:*</label>
-                <div class="contact__input--wrapper">
+                <label class="contact__label" for="email">E-mail:*</label>
+                <div class="contact__input-wrapper">
                   <input class="contact__input contact__input--email" type="email" value="kuklachev@gmail.com"
                     name="email" id="email" required>
-                  <svg class="contact__input--email-icon" aria-label="Иконка телефона">
-                    <use xlink:href="sprite.svg#icon-email"></use>
+                  <svg class="contact__email-icon" aria-label="Иконка почты">
+                    <use xlink:href="./img/sprite.svg#icon-email"></use>
                   </svg>
                 </div>
               </li>
 
               <li class="contact__item">
-                <label class="contact__label contact__label--phone" for="phone">Телефон:*</label>
-                <div class="contact__input--wrapper">
+                <label class="contact__label" for="phone">Телефон:*</label>
+                <div class="contact__input-wrapper">
                   <input class="contact__input contact__input--phone" type="tel" value="8 (960) 900-60-90" name="phone"
                     id="phone" required>
-                  <svg class="contact__input--phone-icon" aria-label="Иконка телефона">
-                    <use xlink:href="sprite.svg#icon-phone"></use>
+                  <svg class="contact__phone-icon" aria-label="Иконка телефона">
+                    <use xlink:href="./img/sprite.svg#icon-phone"></use>
                   </svg>
                 </div>
               </li>
@@ -155,28 +160,32 @@
             <ul class="additionally__list">
               <li class="additionally__item">
                 <label class="additionally__label">
-                  <input class="additionally__form" type="checkbox" name="additionally" value="sweetener" checked>
+                  <input class="additionally__input" type="checkbox" name="additionally" value="sweetener" checked>
+                  <span class="additionally__mark"></span>
                   <span class="additionally__name">Cахарозаменитель</span>
                 </label>
               </li>
 
               <li class="additionally__item">
                 <label class="additionally__label">
-                  <input class="additionally__from" type="checkbox" name="additionally" value="water">
+                  <input class="additionally__input" type="checkbox" name="additionally" value="water">
+                  <span class="additionally__mark"></span>
                   <span class="additionally__name">Питьевая вода</span>
                 </label>
               </li>
 
               <li class="additionally__item">
                 <label class="additionally__label">
-                  <input class="additionally__from" type="checkbox" name="additionally" value="milk">
+                  <input class="additionally__input" type="checkbox" name="additionally" value="milk">
+                  <span class="additionally__mark"></span>
                   <span class="additionally__name">Молоко</span>
                 </label>
               </li>
 
               <li class="additionally__item">
                 <label class="additionally__label">
-                  <input class="additionally__from" type="checkbox" name="additionally" value="vitamins">
+                  <input class="additionally__input" type="checkbox" name="additionally" value="vitamins">
+                  <span class="additionally__mark"></span>
                   <span class="additionally__name">Витамины</span>
                 </label>
               </li>
@@ -230,7 +239,7 @@
                 <span class="visually-hidden">Вконтакте.</span>
                 <svg class="footer-social__icon footer-social__icon--vk"
                   aria-label="Ссылка на страницу HTML Academy в социальной сети Вконтакте.">
-                  <use xlink:href="sprite.svg#vk"></use>
+                  <use xlink:href="./img/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
@@ -240,7 +249,7 @@
                 <span class="visually-hidden">YouTube.</span>
                 <svg class="footer-social__icon footer-social__icon--yt"
                   aria-label="Ссылка на канал HTML Academy в YouTube.">
-                  <use xlink:href="sprite.svg#youtube"></use>
+                  <use xlink:href="./img/sprite.svg#youtube"></use>
                 </svg>
               </a>
             </li>
@@ -249,7 +258,7 @@
               <a class="footer-social__link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм.</span>
                 <svg class="footer-social__icon footer-social__icon-tg" aria-label="Канал HTML Academy в телеграмме.">
-                  <use xlink:href="sprite.svg#telegram"></use>
+                  <use xlink:href="./img/sprite.svg#telegram"></use>
                 </svg>
               </a>
             </li>
@@ -259,7 +268,7 @@
         <a class="footer__copyright copyright" href="https://htmlacademy.ru/">
           <p class="copyright__link">HTML Academy</p>
           <svg class="copyright__htmlacademy-logo" aria-label="Ссылка на сайт HTML Академии.">
-            <use xlink:href="sprite.svg#htmlacademy"></use>
+            <use xlink:href="./img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>

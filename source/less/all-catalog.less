@@ -51,6 +51,26 @@
   }
 }
 
+.all-catalog::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background-color: #d3d3d3;
+  top: 25px;
+  left: 50%;
+}
+
+.all-catalog::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+  top: 40px;
+  left: calc(50% - 15px);
+}
+
 @media (min-width: @tablet-width) {
   .all-catalog {
     display: flex;

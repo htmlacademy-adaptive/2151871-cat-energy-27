@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -25,7 +27,7 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <svg class="main-nav__burger" aria-label="Отрыть меню." focusable="false">
-            <use xlink:href="./sprite.svg#menu-burger"></use>
+            <use xlink:href="./img/sprite.svg#menu-burger"></use>
           </svg>
         </button>
         <div class="main-nav__wrapper">
@@ -62,8 +64,15 @@
           </h3>
         </header>
         <a class="promo__banner" href="#">
-          <img class="promo__image" src="img/promo-cat-energy.png" width="100%" height="100%"
-            alt="Фотография функционального питания для кошек Cat Energy.">
+          <picture>
+            <source srcset="img/promo-cat-energy-desktop.png, img/retina/promo-cat-energy-desktop-@2x.png 2x"
+              media="(min-width: 1440px)">
+            <source srcset="img/promo-cat-energy-tablet.png, img/retina/promo-cat-energy-tablet-@2x.png 2x"
+              media="(min-width: 768px)">
+            <img class="promo__image" src="img/promo-cat-energy.png"
+              srcset="img/promo-cat-energy.png, img/retina/promo-cat-energy-@2x.png 2x" width="100%" height="100%"
+              alt="Фотография функционального питания для кошек Cat Energy.">
+          </picture>
         </a>
         <a class="promo__button promo__button--mobile" href="form.html">
           <span>подобрать программу</span>
@@ -180,26 +189,37 @@
             </div>
           </div>
 
-          <div class="cat-comparison-slider cat-comparison">
-            <div class="cat-comparison__wrapper">
-              <div class="cat-comparison__before cat-comparison__before--active">
-                <img class="cat-comparison__image-before" src="img/cat-fat.png" width="280" height="256"
+          <div class="cat-comparison-slider">
+          <div class="cat-comparison-slider-wrapper cat-comparison" style="--curtain-place: 0.5;">
+            <div class="cat-comparison__before">
+              <picture>
+                <source srcset="img/cat-fat-desktop.png, img/retina/cat-fat-desktop-@2x.png" media="(min-width: 1440px)"
+                  width="560" height="512">
+                <source srcset="img/cat-fat-desktop.png, img/retina/cat-fat-desktop-@2x.png" media="(min-width: 768px)"
+                  width="560" height="512">
+                <img class="cat-comparison__before cat-comparison__image cat-comparison__image-before"
+                  src="img/cat-fat.png" srcset="img/cat-fat.png, img/retina/cat-fat-@2x.png 2x" width="280" height="256"
                   alt="Кот до приема кэт энерджи.">
-              </div>
-              <div class="cat-comparison__after">
-                <img class="cat-comparison__image-after" src="img/cat-skinny.png" width="280" height="256"
-                  alt="Кот после приема кэт энерджи.">
-              </div>
+              </picture>
             </div>
             <div class="cat-comparison__range range-bar">
-              <span class="visually-hidden">Было</span>
-              <label class="range-bar__label">
-                <input class="range-bar__input" id="catComparisonRange" type="range" min="0" max="100" step="1"
-                  value="50">
-              </label>
-              <span class="visually-hidden">Стало</span>
+              <button class="range-bar__button" type="button">
+                <span class="visually-hidden">Ползунок слайдера</span>
+              </button>
+            </div>
+            <div class="cat-comparison__after">
+              <picture>
+                <source srcset="img/cat-skinny-desktop.png, img/retina/cat-skinny-desktop-@2x.png 2x"
+                  media="(min-width: 1440px)" width="560" height="512">
+                <source srcset="img/cat-skinny-desktop.png, img/retina/cat-skinny-desktop-@2x.png 2x"
+                  media="(min-width: 768px)" width="560" height="512">
+                <img class="cat-comparison__after cat-comparison__image cat-comparison__image-after"
+                  src="img/cat-skinny.png" srcset="img/cat-skinny.png, img/retina/cat-skinny-@2x.png 2x" width="280"
+                  height="256" alt="Кот после приема кэт энерджи.">
+              </picture>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>
@@ -242,7 +262,7 @@
                 <span class="visually-hidden">Вконтакте.</span>
                 <svg class="footer-social__icon footer-social__icon--vk"
                   aria-label="Ссылка на страницу HTML Academy в социальной сети Вконтакте.">
-                  <use xlink:href="sprite.svg#vk"></use>
+                  <use xlink:href="./img/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
@@ -252,7 +272,7 @@
                 <span class="visually-hidden">YouTube.</span>
                 <svg class="footer-social__icon footer-social__icon--yt"
                   aria-label="Ссылка на канал HTML Academy в YouTube.">
-                  <use xlink:href="sprite.svg#youtube"></use>
+                  <use xlink:href="./img/sprite.svg#youtube"></use>
                 </svg>
               </a>
             </li>
@@ -261,7 +281,7 @@
               <a class="footer-social__link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм.</span>
                 <svg class="footer-social__icon footer-social__icon-tg" aria-label="Канал HTML Academy в телеграмме.">
-                  <use xlink:href="sprite.svg#telegram"></use>
+                  <use xlink:href="./img/sprite.svg#telegram"></use>
                 </svg>
               </a>
             </li>
@@ -271,7 +291,7 @@
         <a class="footer__copyright copyright" href="https://htmlacademy.ru/">
           <p class="copyright__link">HTML Academy</p>
           <svg class="copyright__htmlacademy-logo" aria-label="Ссылка на сайт HTML Академии.">
-            <use xlink:href="sprite.svg#htmlacademy"></use>
+            <use xlink:href="./img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>
