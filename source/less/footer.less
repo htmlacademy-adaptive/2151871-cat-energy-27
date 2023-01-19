@@ -10,7 +10,7 @@
 
 .footer__logo {
   padding-top: 39px;
-  padding-bottom: 32px;
+  padding-bottom: 17px;
   text-align: center;
   border-bottom: 1px solid #d9d9d9;
   margin-right: 20px;
@@ -27,7 +27,7 @@
 
 .footer__copyright {
   display: flex;
-  padding: 23px 20px;
+  padding: 20px 20px;
   justify-content: space-between;
   text-decoration: none;
   align-items: center;
@@ -49,8 +49,9 @@
   }
 
   .footer__social {
+    min-width: 142px;
     margin: 0;
-    padding: 0;
+    padding-left: 25px;
   }
 
   .footer__social-list {
@@ -65,9 +66,14 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-footer {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .footer__contacts {
     display: flex;
-    padding: 60px 110px;
+    padding: 65px 110px;
     justify-content: space-between;
     align-items: center;
   }
@@ -76,11 +82,6 @@
     margin: 0;
     padding: 0;
     text-align: center;
-  }
-
-  .footer__social {
-    margin: 0;
-    padding: 0;
   }
 
   .footer__social-list {

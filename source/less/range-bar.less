@@ -1,46 +1,49 @@
 .cat-comparison__range {
-	z-index: 1;
-	display: grid;
-	place-items: center;
-	margin: 0 -2px;
-	width: 4px;
-	height: 100%;
-	border-radius: 2px;
-	background-color: #666666;
-	cursor: col-resize;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  margin: 0 -2px;
+  width: 4px;
+  height: 100%;
+  border-radius: 2px;
+  background-color: #666666;
+  cursor: col-resize;
 
-	&:hover {
-		background-color: #68b738;
-	}
+  &:hover {
+    background-color: #68b738;
+  }
 
-	&:active {
-		opacity: 0.6;
-	}
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .range-bar__button {
   box-sizing: border-box;
-	display: grid;
-	margin: -18px;
-	padding: 0;
-	width: 40px;
-	height: 40px;
-	color: #666666;
-	border: 2px solid #666666;
-	border-radius: 20px;
-	background-color: #ffffff;
-	cursor: col-resize;
+  display: grid;
+  margin: -18px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  color: #666666;
+  border: 2px solid #666666;
+  border-radius: 20px;
+  background-color: #ffffff;
+  cursor: col-resize;
 
   &:hover {
-		border: 2px solid #68b738;
-	}
+    border: 2px solid #68b738;
+  }
 }
 
 .range-bar__button::before {
   content: "";
-		background-color: #ffffff;
-		background-image: url("../img/range-bar.svg");
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    background-position: center;
+  background-color: #ffffff;
+  background-image: url("../img/range-bar.svg");
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  width: 24px;
+  height: 18px;
+  transform: translate(25%, 50%);
+  background-position: center;
 }

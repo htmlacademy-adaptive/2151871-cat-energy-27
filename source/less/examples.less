@@ -20,13 +20,16 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+  .block__text--br {
+    display: none;
+  }
 }
 
 .examples__statistic {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -38,25 +41,39 @@
   .examples__title {
     font-size: 60px;
     line-height: 60px;
-    margin-right: 30px;
-    margin-left: 30px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .examples__text {
-    margin: 70px 30px 54px 30px;
+    margin-top: 65px;
+    margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .block__text--br {
+    display: none;
   }
 
   .examples__statistic {
     justify-content: flex-start;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-bottom: 85px;
+    margin-bottom: 105px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .examples {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .examples__wrapper {
     background-color: #ffffff;
     padding: 0;
@@ -73,16 +90,23 @@
     line-height: 60px;
     margin-bottom: 76px;
     margin-left: 110px;
-    margin-right: 110px;
+    max-width: 650px;
+    padding: 0;
   }
 
   .examples__text {
     margin: 70px 110px;
     width: 436px;
+    padding: 0;
+
+    .block__text--br {
+      display: block;
+    }
   }
 
   .examples__statistic {
     margin-left: 110px;
     margin-bottom: 75px;
+    padding: 0;
   }
 }
