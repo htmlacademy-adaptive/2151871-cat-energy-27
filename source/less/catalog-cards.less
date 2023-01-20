@@ -1,5 +1,4 @@
 .catalog-cards {
-  // width: auto;
   overflow: hidden;
 }
 
@@ -10,7 +9,7 @@
 
 .catalog-cards__title {
   margin: 0;
-  padding-top: 23px;
+  padding-top: 27px;
   padding-bottom: 41px;
   font-family: inherit;
   font-weight: 400;
@@ -31,7 +30,7 @@
 
 @media (min-width: @tablet-width) {
   .catalog-cards__wrapper {
-    padding: 65px 30px;
+    padding: 64px 30px;
   }
 
   .catalog-cards__wrapper-container {
@@ -59,12 +58,19 @@
 
 @media (min-width: @desktop-width) {
   .catalog-cards__wrapper {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 75px 110px;
+  }
+
+  .catalog-cards__wrapper-container {
+    padding-top: 155px;
   }
 
   .catalog-cards__list {
     grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 143px;
+    grid-row-gap: 135px;
     grid-column-gap: 80px;
   }
 }
