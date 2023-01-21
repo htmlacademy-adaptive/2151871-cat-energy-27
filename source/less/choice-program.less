@@ -58,8 +58,12 @@
   left: 8px;
 }
 
+.choice-program__input[type="radio"]:focus-visible + .choice-program__mark {
+  outline: 1px solid #68b738;
+}
+
 .choice-program__name {
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -82,26 +86,25 @@
   }
 
   .choice-program__mark {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
   }
 
   .choice-program__input[type="radio"]:checked + .choice-program__mark::after {
     height: 18px;
     width: 18px;
-    top: 11px;
-    left: 11px;
+    top: 10px;
+    left: 10px;
   }
 
-
   .choice-program__name {
-    padding-left: 43px;
+    padding-left: 35px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .choice-program__form {
+    padding: 28px 20px 6px 26px;
     margin: 0;
-    margin-left: 80px;
   }
 }
