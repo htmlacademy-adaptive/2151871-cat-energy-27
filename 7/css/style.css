@@ -1501,10 +1501,12 @@ a {
   }
 }
 @media (min-width: 1440px) {
-  .catalog-cards__wrapper {
+  .catalog-cards {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .catalog-cards__wrapper {
     padding: 75px 110px;
   }
   .catalog-cards__wrapper-container {
@@ -2015,10 +2017,12 @@ a {
   }
 }
 @media (min-width: 1440px) {
-  .additional-products__wrapper {
+  .additional-products {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .additional-products__wrapper {
     padding: 0 110px 86px 110px;
   }
   .additional-products__wrapper-title {
