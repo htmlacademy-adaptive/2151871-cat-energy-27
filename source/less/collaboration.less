@@ -10,6 +10,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  padding-right: 17px;
+  width: 139px;
 }
 
 .collaboration__address {
@@ -27,7 +29,12 @@
   justify-content: space-between;
 }
 
-.collaboration__google-map {
+.collaboration__invitation--catalog {
+  background-color: #f2f2f2;
+}
+
+.collaboration__map {
+  height: 362px;
   display: block;
   border: none;
 }
@@ -39,7 +46,7 @@
   }
 
   .collaboration__invitation {
-    padding: 54px 70px;
+    padding: 60px 70px 56px;
   }
 
   .collaboration__title {
@@ -50,13 +57,14 @@
   }
 
   .collaboration__address {
+    margin-top: -5px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
     width: 160px;
   }
 
-  .collaboration__google-map {
+  .collaboration__map {
     height: 400px;
   }
 }
@@ -67,7 +75,7 @@
   }
 
   .collaboration__invitation {
-    padding: 60px 80px 56px 80px;
+    padding: 56px 80px 56px 80px;
     justify-content: space-between;
     width: 405px;
     align-items: center;
@@ -88,5 +96,10 @@
   .collaboration__address {
     font-size: 16px;
     line-height: 20px;
+    text-align: start;
+
+    .block__text--br {
+      display: block;
+    }
   }
 }

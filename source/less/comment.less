@@ -18,10 +18,22 @@
   color: #444444;
   border: 1px solid #e7e7e7;
   box-sizing: border-box;
-  padding: 10px 12px 45px;
+  padding: 6px 12px;
   width: 100%;
-  height: auto;
+  min-height: 150px;
   margin-top: 40px;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -34,8 +46,8 @@
   .comment__skill-cat-form {
     font-size: 20px;
     line-height: 30px;
-    padding: 8px 22px;
-    margin-bottom: 73px;
+    padding: 8px 20px;
+    margin-bottom: 65px;
     margin-top: 79px;
     min-height: 174px;
   }
@@ -49,7 +61,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    top: 50%;
+    top: 65%;
     background-color: #68b738;
     right: 100%;
     margin-right: 40px;
@@ -58,7 +70,8 @@
 
 @media (min-width: @desktop-width) {
   .comment__skill-cat-form {
-    margin-bottom: 67px;
+    margin-top: 77px;
+    margin-bottom: 65px;
     min-height: 174px;
   }
 }

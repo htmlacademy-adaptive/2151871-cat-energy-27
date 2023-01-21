@@ -1,6 +1,6 @@
 .contact__list {
   padding-top: 35px;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 }
 
 .contact__title {
@@ -23,7 +23,7 @@
 }
 
 .contact__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 
 .contact__label {
@@ -124,7 +124,7 @@
   }
 
   .contact__list {
-    padding-top: 70px;
+    padding-top: 73px;
     padding-bottom: 0;
   }
 
@@ -142,7 +142,7 @@
     white-space: nowrap;
     font-size: 20px;
     line-height: 30px;
-    margin-right: 18px;
+    margin-right: 20px;
   }
 
   .contact__input {
@@ -156,20 +156,27 @@
 @media (min-width: @desktop-width) {
   .contact__list {
     display: flex;
-    justify-content: space-between;
+    margin-right: 0;
     padding-top: 75px;
-    padding-bottom: 70px;
+    padding-bottom: 68px;
   }
 
   .contact__input {
+    padding: 10px 20px;
     min-width: 486px;
   }
 
+  .contact__input--phone {
+    min-width: 468px;
+  }
+
   .contact__item {
+    margin-left: 80px;
     margin-bottom: 0;
   }
 
   .contact__item:not(:last-child) {
+    margin-left: 0;
     margin-bottom: 0;
   }
 }

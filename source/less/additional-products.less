@@ -3,7 +3,7 @@
 }
 
 .additional-products__wrapper {
-  padding: 26px 20px 35px 20px;
+  padding: 23px 20px 35px 20px;
   background-color: #ffffff;
 }
 
@@ -43,7 +43,7 @@
 .additional-products__item {
   display: flex;
   flex-direction: column;
-  padding-bottom: 19px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #cdcdcd;
 }
 
@@ -53,7 +53,7 @@
 
 .additional-products__name-card {
   margin: 0;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   padding-top: 13px;
   font-family: inherit;
   font-weight: 400;
@@ -71,7 +71,7 @@
   color: #444444;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  padding-bottom: 13px;
 }
 
 .additional-products__button {
@@ -121,11 +121,12 @@
   text-align: center;
   color: #ffffff;
   margin: 0;
-  padding-bottom: 43px;
+  padding-bottom: 42px;
 }
 
 .additional-products__icon {
-  margin: 55px auto;
+  margin-top: 58px;
+  margin-bottom: 50px;
   width: 100%;
   height: 80px;
   fill: #ffffff;
@@ -133,8 +134,12 @@
 
 @media (min-width: @tablet-width) {
   .additional-products__wrapper {
-    padding: 3px 30px 76px 30px;
+    padding: 4px 30px 76px 30px;
     background-color: #ffffff;
+  }
+
+  .additional-products__wrapper-title {
+    margin-bottom: 80px;
   }
 
   .additional-products__wrapper-title::before {
@@ -147,7 +152,6 @@
     right: 100%;
     overflow: hidden;
   }
-
 
   .additional-products__title {
     display: inline-block;
@@ -165,7 +169,7 @@
   .additional-products__item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 26px 38px 32px 38px;
+    padding: 26px 38px 28px 38px;
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
   }
@@ -187,7 +191,9 @@
   }
 
   .additional-products__price {
-    margin-left: 50px;
+    min-width: 42px;
+    text-align: end;
+    padding-left: 50px;
   }
 
   .additional-products__pack,
@@ -201,7 +207,7 @@
     grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: -1;
-    margin-top: 20px;
+    margin-top: 11px;
   }
 
   .additional-products__bonus {
@@ -212,6 +218,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 200px;
+    margin-top: 69px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -227,6 +234,7 @@
     margin-right: 0;
     width: 80px;
     height: 90px;
+    margin-top: 45px;
   }
 
   .additional-products__bonus-title {
@@ -237,13 +245,30 @@
 }
 
 @media (min-width: @desktop-width) {
+  .additional-products {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .additional-products__wrapper {
     padding: 0 110px 86px 110px;
   }
 
+  .additional-products__wrapper-title {
+    margin-bottom: 80px;
+  }
+
+  .additional-products__wrapper-title::before {
+    right: 103%;
+  }
+
+  .additional-products__title {
+    padding-left: 0;
+  }
+
   .additional-products__body {
     display: flex;
-    margin-top: 80px;
   }
 
   .additional-products__list {
@@ -256,7 +281,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 0 17px 0;
+    padding: 18px 0 13px 0;
     border-left: none;
     border-right: none;
   }
@@ -265,9 +290,19 @@
     margin: 0;
     width: 245px;
     margin-left: 38px;
+    transform: translate(2px, -3px);
+  }
+
+  .additional-products__pack {
+    padding-left: 15px;
+  }
+
+  .additional-products__price {
+    text-align: start;
   }
 
   .additional-products__info-card {
+    padding: 0;
     flex-basis: 300px;
     justify-content: space-between;
   }
@@ -278,6 +313,7 @@
 
   .additional-products__bonus {
     flex-direction: column;
+    margin-top: 0;
     margin-left: 80px;
     background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background-bonus-desktop.jpg");
   }
@@ -290,12 +326,12 @@
   }
 
   .additional-products__bonus-title {
-    padding: 0;
-    margin: 45px 43px;
+    margin: 43px;
+    text-align: center;
   }
 
   .additional-products__icon {
-    margin-top: 56px;
+    margin-top: 52px;
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;

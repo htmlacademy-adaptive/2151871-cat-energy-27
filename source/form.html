@@ -115,7 +115,7 @@
           <div class="questions__contact contact">
             <div class="contact__wrapper line">
               <h2 class="contact__title">
-                Контактные данные <br>
+                Контактные данные <br class="block__text--br">
                 (владельца кота)
               </h2>
             </div>
@@ -207,18 +207,18 @@
       <section class="footer__collaboration collaboration">
         <div class="collaboration__wrapper">
           <h2 class="visually-hidden">Сотрудничество.</h2>
-          <div class="collaboration__invitation">
-            <h3 class="collaboration__title">приглашаем к сотрудничеству дилеров!</h3>
-            <p class="collaboration__address">ул. Большая Конюшенная, д. 19/8
+          <div class="collaboration__invitation collaboration__invitation--catalog">
+            <h3 class="collaboration__title">приглашаем к&nbsp;сотрудничеству дилеров!</h3>
+            <p class="collaboration__address">ул. Большая Конюшенная, д. 19/8 <br class="block__text--br">
               Санкт-Петербург</p>
           </div>
         </div>
         <div class="collaboration__map">
           <h2 class="visually-hidden">Наше местоположение.</h2>
-          <iframe class="collaboration__google-map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-            width="100%" height="362" allowfullscreen=""
-            title="Офис компании по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858716276668!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1673549122033!5m2!1sru!2sru"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
       </section>
@@ -227,8 +227,11 @@
         <section class="footer__logo footer-logo">
           <h2 class="visually-hidden">Логотип сайта.</h2>
           <a class="footer-logo__logo-cat-energy" href="#">
-            <img class="footer-logo__cat-energy" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128"
-              height="24">
+            <picture>
+              <source srcset="img/logo-footer.svg" media="(min-width: 768px)" width="143" height="26">
+              <img class="footer-logo__cat-energy" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128"
+                height="24">
+            </picture>
           </a>
         </section>
         <section class="footer__social">

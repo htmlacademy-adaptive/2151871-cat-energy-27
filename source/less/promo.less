@@ -8,7 +8,7 @@
   background-color: #008000;
   background-size: cover;
   width: 100%;
-  height: 302px;
+  min-height: 302px;
   top: 0;
 }
 
@@ -122,6 +122,7 @@
   .promo__image {
     display: block;
     width: 709px;
+    margin-bottom: 0;
   }
 
   .promo__button {
@@ -133,23 +134,29 @@
     height: 54px;
     margin-left: 90px;
     margin-top: 29px;
-    padding: 14px 26px;
+    padding: 16px 26px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .promo {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .promo__wrapper {
     position: relative;
     padding: 0;
     padding-left: 190px;
-    padding-top: 111px;
+    padding-top: 109px;
     padding-bottom: 82px;
   }
 
   .promo__wrapper::before {
     content: "";
     position: absolute;
-    top: -112px;
+    top: -114px;
     right: 0;
     background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop.png");
     background-repeat: no-repeat;
@@ -157,7 +164,7 @@
     background-color: rgba(104, 183, 56, 0.85);
     background-size: cover;
     width: 50%;
-    height: 694px;
+    min-height: 694px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -170,7 +177,7 @@
   .promo__image {
     display: block;
     position: absolute;
-    top: 30px;
+    top: 28px;
     left: 559px;
     width: 552px;
   }
@@ -195,7 +202,7 @@
   }
 
   .promo__button {
-    margin-top: 35px;
+    margin-top: 33px;
     margin-left: 0;
   }
 }
