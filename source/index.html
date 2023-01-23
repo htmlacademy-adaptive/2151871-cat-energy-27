@@ -13,18 +13,21 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo logotype">
-        <picture>
-          <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)">
-          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
-          <img class="logotype__logo-cat" src="img/logo-mobile.svg" srcset="img/logo-mobile.svg"
-            alt="Логотип Кот Энерджи.">
-        </picture>
-      </a>
-      <a class="main-header__logo-cat-energy">
-        <img src="img/logo.svg" width="101" height="18" alt="Кэт энерджи.">
-      </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="main-header__wrapper-logo">
+        <a class="main-header__logo logotype">
+          <picture>
+            <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)">
+            <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+            <img class="logotype__logo-cat" src="img/logo-mobile.svg" srcset="img/logo-mobile.svg"
+              alt="Логотип Кот Энерджи.">
+          </picture>
+        </a>
+        <a class="main-header__logo-cat-energy">
+          <img src="img/logo.svg" width="101" height="18" alt="Кэт энерджи.">
+        </a>
+        <span class="main-header__cointainer-toogle"></span>
+      </div>
+      <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <svg class="main-nav__burger" aria-label="Отрыть меню." focusable="false">
             <use xlink:href="./img/sprite.svg#menu-burger"></use>
@@ -234,7 +237,10 @@
           <div class="collaboration__invitation">
             <h3 class="collaboration__title">приглашаем к&nbsp;сотрудничеству дилеров!</h3>
             <p class="collaboration__address">ул. Большая Конюшенная, д. 19/8 <br class="block__text--br">
-              Санкт-Петербург</p>
+              <span class="collaboration__address-paragraph">
+                Санкт-Петербург
+              </span>
+            </p>
           </div>
         </div>
         <div class="collaboration__map">

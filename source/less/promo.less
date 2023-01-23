@@ -5,11 +5,10 @@
   background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top;
-  background-color: #008000;
+  background-color: rgba(104, 183, 56, 0.85);
   background-size: cover;
   width: 100%;
   min-height: 302px;
-  top: 0;
 }
 
 @media (min-resolution: 2dppx) {
@@ -90,6 +89,10 @@
     background-color: #ffffff;
   }
 
+  .promo::before {
+    display: none;
+  }
+
   .promo__wrapper {
     display: flex;
     flex-direction: column;
@@ -151,6 +154,7 @@
     padding-left: 190px;
     padding-top: 109px;
     padding-bottom: 82px;
+    background-color: #ffffff;
   }
 
   .promo__wrapper::before {

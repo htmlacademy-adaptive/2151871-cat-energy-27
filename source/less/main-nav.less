@@ -1,13 +1,14 @@
 .main-nav {
   width: auto;
+  position: relative;
 }
 
 .main-nav__list {
   position: fixed;
+  position: absolute;
   z-index: 4;
   left: 0;
   right: 0;
-  top: 65px;
   width: 100%;
   background-color: #ffffff;
 }
@@ -19,7 +20,7 @@
 
 .site-list__link {
   padding-top: 22px;
-  padding-bottom: 24px;
+  padding-bottom: 22px;
   padding-left: 0;
   position: relative;
   display: block;
@@ -51,16 +52,19 @@
 
 .main-nav__toggle {
   display: block;
+  position: absolute;
   cursor: pointer;
   border: none;
   background-color: #ffffff;
   padding: 0;
   width: 24px;
-  height: 16px;
+  height: 18px;
+  right: 20px;
+  top: -43px;
 }
 
 .main-header__logo-cat-energy {
-  margin-left: -8px;
+  margin-left: 8px;
   margin-top: 6px;
 }
 
@@ -69,7 +73,6 @@
   position: absolute;
   top: 20px;
   left: 25px;
-  height: 66px;
   background-color: #ffffff;
 }
 
@@ -77,17 +80,16 @@
   display: none;
 }
 
-.main-nav--opened .main-nav__toggle {
-  top: 0;
-  right: 0;
-}
+// .main-nav--opened .main-nav__toggle {
+//   height: 66px;
+// }
 
 .main-nav--opened .main-nav__toggle::before,
 .main-nav--opened .main-nav__toggle::after {
   content: "";
   position: absolute;
-  top: 28px;
-  right: 20px;
+  top: 5;
+  right: 0;
   width: 25px;
   height: 1.5px;
   background-color: #000000;
@@ -109,6 +111,25 @@
 
   .main-nav--closed .main-nav__list {
     display: none;
+  }
+
+  .main-nav--nojs .main-nav {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    position: static;
+    display: block;
+  }
+
+  .main-nav--nojs .site-list__item {
+
+    display: block;
   }
 }
 

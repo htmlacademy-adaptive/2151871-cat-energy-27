@@ -25,7 +25,7 @@
 
   <symbol id="menu-burger" viewBox="0 0 24 18">
     <g>
-      <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24"/>
+      <path stroke="#000" stroke-width="2" d="M0 1.25h24M0 9.25h24M0 17.25h24"/>
     </g>
   </symbol>
 
