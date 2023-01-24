@@ -99,6 +99,10 @@
     padding: 64px 30px 0 30px;
   }
 
+  .promo__header {
+    width: 530px;
+  }
+
   .promo__title {
     padding: 0;
     text-align: left;
@@ -143,22 +147,13 @@
 
 @media (min-width: @desktop-width) {
   .promo {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .promo__wrapper {
     position: relative;
-    padding: 0;
-    padding-left: 190px;
-    padding-top: 109px;
-    padding-bottom: 82px;
-    background-color: #ffffff;
+    background-color: transparent;
   }
 
-  .promo__wrapper::before {
+  .promo::after{
     content: "";
+    z-index: -1;
     position: absolute;
     top: -114px;
     right: 0;
@@ -171,11 +166,25 @@
     min-height: 694px;
   }
 
+  .promo__wrapper {
+    max-width: 1440px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    background-color: transparent;
+  }
+
   @media (min-resolution: 2dppx) {
     .promo__wrapper::before {
       background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/retina/index-background-desktop-@2x.png");
       background-size: cover;
     }
+  }
+
+  .promo__header {
+    margin-top: 110px;
+    padding-left: 190px;
   }
 
   .promo__image {
@@ -187,11 +196,13 @@
   }
 
   .promo__title {
+    padding-right: 60px;
     text-align: left;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     margin-left: 0;
+    margin-bottom: 0;
   }
 
   .promo__slogan {
@@ -201,12 +212,8 @@
     margin-left: 0;
   }
 
-  .main-nav__link {
-    color: #ffffff;
-  }
-
   .promo__button {
+    margin-left: 190px;
     margin-top: 33px;
-    margin-left: 0;
   }
 }
