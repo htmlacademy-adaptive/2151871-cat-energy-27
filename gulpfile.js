@@ -20,7 +20,7 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
-     autoprefixer(),
+    autoprefixer(),
     csso()
     ]))
     .pipe(rename('style.min.css'))
@@ -61,7 +61,7 @@ const copyImages = () => {
 const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh({
-      webp: {}
+     webp: {}
      }))
     .pipe(gulp.dest('build/img'));
 }
