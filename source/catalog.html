@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Кэт энерджи</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/152.png">
@@ -24,11 +24,11 @@
           </picture>
         </a>
         <a class="main-header__logo-cat-energy">
-          <img src="img/logo.svg" width="101" height="18" alt="Кэт энерджи.">
+          <img src="img/logo.svg" alt="Кэт энерджи.">
         </a>
         <span class="main-header__cointainer-toogle"></span>
       </div>
-      <nav class="main-nav main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <svg class="main-nav__burger" aria-label="Отрыть меню." focusable="false">
             <use xlink:href="./img/sprite.svg#menu-burger"></use>
@@ -67,6 +67,9 @@
               <a class="product-card__icon" href="#">
                 <div class="product-card__wrapper-icon">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/chicken-500-desktop.webp, img/retina/chicken-500-desktop-@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/chicken-500-tablet.webp, img/retina/chicken-500-tablet-@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/chicken-500-mobile.webp, img/retina/chicken-500-mobile-@2x.webp 2x">
                     <source srcset="img/catalog/chicken-500-desktop.png, img/retina/chicken-500-desktop-@2x.png 2x"
                       media="(min-width: 1440px)">
                     <source srcset="img/catalog/chicken-500-tablet.png, img/retina/chicken-500-desktop-@2x.png 2x"
@@ -101,6 +104,9 @@
               <a class="product-card__icon" href="#">
                 <div class="product-card__wrapper-icon product-card__wrapper-icon--big">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/chicken-1000-desktop.webp, img/retina/chicken-1000-desktop-@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/chicken-1000-tablet.webp, img/retina/chicken-1000-tablet-@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/chicken-1000-mobile.webp, img/retina/chicken-1000-mobile-@2x.webp 2x">
                     <source srcset="img/catalog/chicken-1000-desktop.png, img/retina/chicken-1000-desktop-@2x.png 2x"
                       media="(min-width: 1440px)">
                     <source srcset="img/catalog/chicken-1000-tablet.png, img/retina/chicken-1000-tablet-@2x.png 2x"
@@ -135,6 +141,9 @@
               <a class="product-card__icon" href="#">
                 <div class="product-card__wrapper-icon">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/fish-500-desktop.webp, img/retina/fish-500-desktop-@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/fish-500-tablet.webp, img/retina/fish-500-tablet-@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/fish-500-mobile.webp, img/retina/fish-500-mobile-@2x.webp 2x">
                     <source srcset="img/catalog/fish-500-desktop.png, img/retina/fish-500-desktop-@2x.png 2x"
                       media="(min-width: 1440px)">
                     <source srcset="img/catalog/fish-500-tablet.png, img/retina/fish-500-desktop-@2x.png 2x"
@@ -169,6 +178,9 @@
               <a class="product-card__icon" href="#">
                 <div class="product-card__wrapper-icon product-card__wrapper-icon--big">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/fish-1000-desktop.webp, img/retina/fish-1000-desktop-@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/fish-1000-tablet.webp, img/retina/fish-1000-tablet-@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/fish-1000-mobile.webp, img/retina/fish-1000-mobile-@2x.webp 2x">
                     <source srcset="img/catalog/fish-1000-desktop.png, img/retina/fish-1000-desktop-@2x.png 2x"
                       media="(min-width: 1440px)">
                     <source srcset="img/catalog/fish-1000-tablet.png, img/retina/fish-1000-tablet-@2x.png 2x"
@@ -203,6 +215,9 @@
               <a class="product-card__icon" href="#">
                 <div class="product-card__wrapper-icon">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/buckwheat-500-desktop.webp, img/retina/buckwheat-500-desktop-@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/buckwheat-500-tablet.webp, img/retina/buckwheat-500-tablet-@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/buckwheat-500-mobile.webp, img/retina/buckwheat-500-mobile-@2x.webp 2x">
                     <source srcset="img/catalog/buckwheat-500-desktop.png, img/retina/buckwheat-500-desktop-@2x.png 2x"
                       media="(min-width: 1440px)">
                     <source srcset="img/catalog/buckwheat-500-tablet.png, img/retina/buckwheat-500-desktop-@2x.png 2x"
@@ -237,6 +252,9 @@
               <a class="product-card__icon" href="#">
                 <div class="product-card__wrapper-icon product-card__wrapper-icon--big">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/buckwheat-1000-desktop.webp, img/retina/buckwheat-1000-desktop-@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/buckwheat-1000-tablet.webp, img/retina/buckwheat-1000-tablet-@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/buckwheat-1000-mobile.webp, img/retina/buckwheat-1000-mobile-@2x.webp 2x">
                     <source
                       srcset="img/catalog/buckwheat-1000-desktop.png, img/retina/buckwheat-1000-desktop-@2x.png 2x"
                       media="(min-width: 1440px)">
@@ -272,6 +290,9 @@
               <a class="product-card__icon" href="#">
                 <div class="product-card__wrapper-icon">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/rice-500-desktop.webp, img/retina/rice-500-desktop-@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/rice-500-tablet.webp, img/retina/rice-500-tablet-@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/rice-500-mobile.webp, img/retina/rice-500-mobile-@2x.webp 2x">
                     <source srcset="img/catalog/rice-500-desktop.png, img/retina/rice-500-desktop-@2x.png 2x"
                       media="(min-width: 1440px)">
                     <source srcset="img/catalog/rice-500-tablet.png, img/retina/rice-500-desktop-@2x.png 2x"
@@ -305,7 +326,7 @@
             <li class="catalog-cards__all-catalog all-catalog">
               <h2 class="all-catalog__title">Показать еще 100500 товаров</h2>
               <h3 class="all-catalog__subtitle">На самом деле вкусов гораздо больше!</h3>
-              <button class="all-catalog__button" type="button">показать все</и>
+              <button class="all-catalog__button" type="button">показать все</button>
             </li>
 
           </ul>
@@ -399,7 +420,7 @@
             <picture>
               <source srcset="img/logo-footer.svg" media="(min-width: 768px)" width="143" height="26">
               <img class="footer-logo__cat-energy" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128"
-                height="24">
+              height="24">
             </picture>
           </a>
         </section>
