@@ -71,17 +71,17 @@
           <ul class="questions__cat-data cat-data">
             <li class="cat-data__item">
               <label class="cat-data__name" for="cat-name">ИМЯ:*</label>
-              <input class="cat-data__name-form" type="text" name="cat-name" value="БАРСИК" id="cat-name" required>
+              <input class="cat-data__name-form" type="text" name="cat-name" placeholder="БАРСИК" id="cat-name" required>
             </li>
 
             <li class="cat-data__item">
               <label class="cat-data__name" for="cat-weight">Вес (кг):*</label>
-              <input class="cat-data__name-form" type="number" name="cat-weight" value="7" id="cat-weight" required>
+              <input class="cat-data__name-form" type="number" name="cat-weight" placeholder="7" id="cat-weight" required>
             </li>
 
             <li class="cat-data__item">
               <label class="cat-data__name" for="cat-age">Возраст (лет):</label>
-              <input class="cat-data__name-form" type="number" name="cat-age" value="7" id="cat-age">
+              <input class="cat-data__name-form" type="number" name="cat-age" placeholder="7" id="cat-age">
             </li>
           </ul>
           <div class="questions__choice-program choice-program">
@@ -128,7 +128,7 @@
               <li class="contact__item">
                 <label class="contact__label" for="email">E-mail:*</label>
                 <div class="contact__input-wrapper">
-                  <input class="contact__input contact__input--email" type="email" value="kuklachev@gmail.com"
+                  <input class="contact__input contact__input--email" type="email" placeholder="kuklachev@gmail.com"
                     name="email" id="email" required>
                   <svg class="contact__email-icon" aria-label="Иконка почты">
                     <use xlink:href="./img/sprite.svg#icon-email"></use>
@@ -139,7 +139,7 @@
               <li class="contact__item">
                 <label class="contact__label" for="phone">Телефон:*</label>
                 <div class="contact__input-wrapper">
-                  <input class="contact__input contact__input--phone" type="tel" value="8 (960) 900-60-90" name="phone"
+                  <input class="contact__input contact__input--phone" type="tel" placeholder="8 (960) 900-60-90" name="phone"
                     id="phone" required>
                   <svg class="contact__phone-icon" aria-label="Иконка телефона">
                     <use xlink:href="./img/sprite.svg#icon-phone"></use>
@@ -154,8 +154,8 @@
             <div class="comment__wrapper line">
               <h2 class="comment__title">Комментарий</h2>
             </div>
-            <label class="comment__skill-cat" for="skills"></label>
-            <textarea class="comment__skill-cat-form" id="skills">Расскажите обо всех повaдках кота</textarea>
+            <label class="comment__skill-cat" for="skills"><span class="visually-hidden">Комментарий</span></label>
+            <textarea class="comment__skill-cat-form" id="skills" placeholder="Расскажите обо всех повaдках кота"></textarea>
           </div>
 
           <div class="questions__additionally additionally">
