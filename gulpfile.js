@@ -90,7 +90,7 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',
-    'source/img/favicon/*.svg',
+    'source/img/favicons/*.svg',
   ], {
     base: 'source'
   })
