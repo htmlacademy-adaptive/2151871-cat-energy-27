@@ -30,6 +30,7 @@
   text-transform: uppercase;
   color: #444444;
   width: 100%;
+  -moz-appearance: textfield;
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -41,6 +42,11 @@
 
   &:invalid {
     outline: 2px solid #ff8282;
+  }
+
+  ::-webkit-outer-spin-button,
+  ::-webkit-inner-spin-button {
+    -webkit-appearance: none;
   }
 }
 
