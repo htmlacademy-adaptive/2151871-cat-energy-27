@@ -8,7 +8,6 @@
 
 .contact__title {
   position: relative;
-  display: inline-block;
   margin: 0;
   font-family: inherit;
   font-weight: 400;
@@ -17,6 +16,16 @@
   vertical-align: baseline;
   color: #000000;
   padding-right: 21px;
+}
+
+.contact__title::after {
+  content: "";
+  position: absolute;
+  top: 37%;
+  width: 10000%;
+  height: 2px;
+  margin-left: 43px;
+  background-color: #68b738;
 }
 
 .contact__item {
@@ -49,8 +58,8 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  right: 15px;
-  top: 17px;
+  right: 14px;
+  top: 14px;
   stroke: #000000;
 }
 
@@ -58,8 +67,8 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  right: 15px;
-  top: 17px;
+  right: 14px;
+  top: 14px;
   stroke: #000000;
 }
 
@@ -91,43 +100,53 @@
     stroke: #68b738;
   }
 
-  &:invalid {
+  &:hover:invalid,
+  :active:invalid,
+  :focus:invalid {
     outline: 2px solid #ff8282;
   }
 
-  &:invalid + .contact__input--email-icon {
+  &:focus:invalid + .contact__email-icon {
     stroke: #ff8282;
   }
 
-  &:invalid + .contact__input--phone-icon {
+  &:focus:invalid + .contact__phone-icon {
     stroke: #ff8282;
   }
 }
 
 @media (min-width: @tablet-width) {
+  .contact__wrapper {
+    position: relative;
+  }
+
+  .contact__title::before {
+    content: "";
+    position: absolute;
+    top: 56%;
+    right: 100%;
+    margin-right: 40px;
+    width: 10000%;
+    height: 2px;
+    z-index: -2;
+    background-color: #68b738;
+  }
+
   .contact__title {
     font-size: 36px;
     line-height: 36px;
     padding-right: 49px;
   }
 
-  .contact__wrapper {
-    position: relative;
-  }
-
-  .contact__wrapper::before {
+  .contact__title::after {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 2px;
-    top: 50%;
-    background-color: #68b738;
-    right: 100%;
-    margin-right: 40px;
+    top: 56%;
+    margin-left: 41px;
   }
 
   .contact__list {
-    padding-top: 73px;
+    padding-top: 76px;
     padding-bottom: 0;
   }
 
@@ -157,11 +176,32 @@
 }
 
 @media (min-width: @desktop-width) {
+  .contact__wrapper {
+    padding: 0 110px;
+  }
+
+  .contact__title::before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    margin-right: 40px;
+    width: 10000%;
+    height: 2px;
+    top: 60%;
+    z-index: -2;
+    background-color: #68b738;
+  }
+
+  .contact__title::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+  }
+
   .contact__list {
     display: flex;
     margin-right: 0;
-    padding-top: 75px;
-    padding-bottom: 68px;
+    padding: 75px 110px 68px 110px;
   }
 
   .contact__input {

@@ -92,18 +92,25 @@
     position: relative;
   }
 
-  .collaboration__invitation {
-    padding: 58px 60px 56px 80px;
-    justify-content: stretch;
-    width: 425px;
-    align-items: center;
+  .collaboration__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    max-width: 1440px;
   }
 
-  .collaboration__wrapper {
+  .collaboration__block {
+    padding: 0 110px;
+  }
+
+  .collaboration__invitation {
+    max-width: 1440px;
     position: absolute;
-    top: 95px;
-    left: 110px;
+    padding: 58px 75px 56px 80px;
+    justify-content: stretch;
     background-color: #ffffff;
+    top: 95px;
+    align-items: center;
   }
 
   .collaboration__title {
@@ -117,9 +124,5 @@
     font-size: 16px;
     line-height: 20px;
     text-align: start;
-
-    .block__text--br {
-      display: block;
-    }
   }
 }

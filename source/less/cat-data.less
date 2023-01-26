@@ -2,7 +2,6 @@
   margin: 0;
   margin-bottom: 11px;
   display: flex;
-  // justify-content: space-between;
   align-items: center;
 }
 
@@ -20,16 +19,17 @@
 .cat-data__name-form {
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
-  padding-top: 13px;
+  padding-top: 14px;
   padding-bottom: 15px;
   padding-left: 20px;
+  width: 100%;
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  width: 100%;
+  appearance: none;
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -39,7 +39,8 @@
     outline: 2px solid #444444;
   }
 
-  &:invalid {
+  &:hover:invalid,
+  :focus:invalid {
     outline: 2px solid #ff8282;
   }
 }
@@ -65,7 +66,7 @@
 @media (min-width: @desktop-width) {
   .cat-data__item {
     width: 568px;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   }
 
   .cat-data__name {
