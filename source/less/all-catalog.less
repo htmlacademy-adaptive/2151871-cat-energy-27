@@ -1,8 +1,29 @@
 .all-catalog {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding: 78px 0 25px 0;
-
   border-bottom: 1px solid #ebebeb;
+}
+
+.all-catalog::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background-color: #d3d3d3;
+  top: 25px;
+  left: 50%;
+}
+
+.all-catalog::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+  top: 40px;
+  left: calc(50% - 15px);
 }
 
 .all-catalog__title {
@@ -27,19 +48,18 @@
 }
 
 .all-catalog__button {
-  border: none;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 40px;
-  background-color: #f2f2f2;
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   color: #444444;
+  background-color: #f2f2f2;
+  min-height: 40px;
+  width: 100%;
+  padding-top: 11px;
 
   &:hover {
     background-color: #ebebeb;
@@ -49,26 +69,6 @@
     background-color: #ebebeb;
     color: rgba(68, 68, 68, 0.3);
   }
-}
-
-.all-catalog::before {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 30px;
-  background-color: #d3d3d3;
-  top: 25px;
-  left: 50%;
-}
-
-.all-catalog::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  background-color: #d3d3d3;
-  top: 40px;
-  left: calc(50% - 15px);
 }
 
 @media (min-width: @tablet-width) {

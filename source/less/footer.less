@@ -1,7 +1,5 @@
 .page-footer__wrapper {
   background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
 }
 
 .footer__social-list {
@@ -40,7 +38,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .footer__contacts {
+  .footer__contacts__wrapper {
     display: flex;
     padding: 58px 30px;
     justify-content: space-between;
@@ -54,7 +52,13 @@
     border-bottom: none;
   }
 
+  .footer-logo__cat-energy {
+    width: 143px;
+    height: 26px;
+  }
+
   .footer__social {
+    padding-top: 5px;
     min-width: 142px;
     margin: 0;
     padding-left: 25px;
@@ -67,11 +71,19 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-footer {
+    background-color: #f2f2f2;
+  }
+
   .footer__contacts {
-    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    max-width: 1440px;
+  }
+
+  .footer__contacts__wrapper {
     padding: 65px 110px;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .footer__logo {
