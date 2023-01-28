@@ -29,7 +29,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  appearance: none;
+  appearance: textfield;
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -40,8 +40,16 @@
   }
 
   &:hover:invalid,
-  :focus:invalid {
+  &:focus:invalid {
     outline: 2px solid #ff8282;
+  }
+
+  &:hover::-webkit-outer-spin-button,
+  &:hover::-webkit-inner-spin-button,
+  &:focus::-webkit-outer-spin-button,
+  &:focus::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
   }
 }
 
